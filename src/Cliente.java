@@ -1,16 +1,10 @@
 public class Cliente {
-    String nome;
-    String cpf;
+    private String nome;
+    private String cpf;
 
-    public static void main(String[] args) {
+    public Cliente(String nome, String cpf){
+        this.nome = nome;
+        this.cpf = cpf;
 
-    }
-
-    void declaraNome(){
-        nome = "João";
-    }
-
-    void declaraCPF(){
-        cpf = "123.456.789-00";
     }
 }
