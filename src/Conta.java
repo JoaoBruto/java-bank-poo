@@ -9,15 +9,15 @@ public class Conta {
         this.cliente = cliente;
     }
 
-    public int getID(){
+    public int getId(){
         return id;
     }
 
-    public double GetSaldo(){
+    public double getSaldo(){
         return saldo;
     }
 
-    public Cliente GetCliente(){
+    public Cliente getCliente(){
         return cliente;
     }
 
