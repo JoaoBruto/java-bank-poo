@@ -13,6 +13,12 @@ public class Conta {
         return id;
     }
 
-    
+    public double GetSaldo(){
+        return saldo;
+    }
+
+    public Cliente GetCliente(){
+        return cliente;
+    }
 
 }
