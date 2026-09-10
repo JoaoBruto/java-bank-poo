@@ -3,7 +3,7 @@ public class Conta {
     private double saldo;
     private Cliente cliente;
 
-    public Conta(Integer id, double saldo, Cliente cliente) {
+    public Conta(int id, double saldo, Cliente cliente) {
         this.id = id;
         this.saldo = saldo;
         this.cliente = cliente;
