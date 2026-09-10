@@ -10,20 +10,20 @@ public class Conta {
         this.cliente = cliente;
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
-    public double getSaldo(){
+    public double getSaldo() {
         return saldo;
     }
 
-    public Cliente getCliente(){
+    public Cliente getCliente() {
         return cliente;
     }
 
-    public double depositar(double valorDeposito){
-
-
-
+    public double depositar(double valorDeposito) {
+        this.saldo += valorDeposito;
+        return saldo;
+    }
 }
