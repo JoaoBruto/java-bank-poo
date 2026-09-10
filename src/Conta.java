@@ -9,4 +9,10 @@ public class Conta {
         this.cliente = cliente;
     }
 
+    public int getID(){
+        return id;
+    }
+
+    
+
 }
