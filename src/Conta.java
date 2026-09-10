@@ -2,6 +2,7 @@ public class Conta {
     private int id;
     private double saldo;
     private Cliente cliente;
+    private double valorDeposito;
 
     public Conta(int id, double saldo, Cliente cliente) {
         this.id = id;
@@ -20,5 +21,9 @@ public class Conta {
     public Cliente getCliente(){
         return cliente;
     }
+
+    public double depositar(double valorDeposito){
+
+
 
 }
