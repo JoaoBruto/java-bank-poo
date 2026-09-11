@@ -33,8 +33,9 @@ public class Conta {
             return valorSaque;
         }
         else {
-            
+            this.saldo -= valorSaque;
             System.out.println("Valor sacado com sucesso! " + valorSaque);
+            return valorSaque;
         }
     }
 }
