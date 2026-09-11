@@ -4,7 +4,7 @@ public class Main {
         Conta minhaConta = new Conta(1, 500.00, meuCliente);
         System.out.println(minhaConta.getCliente().getNome());
         System.out.println(minhaConta.getCliente().getCpf());
-        System.out.println(minhaConta.depositar(100));
-        
+        System.out.println(minhaConta.depositar(-100));
+
     }
 }
