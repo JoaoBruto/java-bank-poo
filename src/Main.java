@@ -10,8 +10,9 @@ public class Main {
         System.out.print("Digite o valor do depósito: \n");
         double valorDepositado = scanner.nextDouble();
         System.out.print(valorDepositado);
+        boolean continuar = true;
 
-        while (true) {
+        while (continuar) {
             System.out.println("Escolha entre as opções: \n 1- Sacar \n 2- Depositar \n 3- Consultar Saldo \n 4- Sair");
             System.out.print("Digite o número da sua opção: \n");
             int opcaoEscolhida = scanner.nextInt();
@@ -26,8 +27,11 @@ public class Main {
                     System.out.println("Você escolheu opção 3");
                     break;
                 case 4:
-                    System.out.println("Você escolheu opção 4");
+                    System.out.println("Saindo...");
+                    continuar = false;
                     break;
+                default:
+                    System.out.println("Escolha uma opção válida!");
             }
         }
 
