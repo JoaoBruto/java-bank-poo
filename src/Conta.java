@@ -23,8 +23,15 @@ public class Conta {
     }
 
     public double depositar(double valorDeposito) {
-        this.saldo += valorDeposito;
-        return saldo;
+        if(valorDeposito >= 0) {
+            System.out.println("Valor inválido. Deposite um valor correto!");
+            return saldo;
+        }
+        else {
+            saldo += valorDeposito;
+            System.out.println("Valor depositado com sucesso." + saldo);
+            return saldo;
+        }
     }
 
     public double sacar(double valorSaque) {
