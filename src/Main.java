@@ -14,6 +14,7 @@ public class Main {
         while (true) {
             System.out.println("Escolha entre as opções: 1- Sacar \n 2- Depositar \n 3- Consultar Saldo \n 4- Sair");
             System.out.print("Digite o número da sua opção: \n");
+            int opçãoEscolhida = scanner.nextInt();
             
         }
 
