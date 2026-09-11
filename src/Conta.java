@@ -23,7 +23,7 @@ public class Conta {
     }
 
     public double depositar(double valorDeposito) {
-        if(valorDeposito >= 0) {
+        if(valorDeposito <= 0) {
             System.out.println("Valor inválido. Deposite um valor correto!");
             return saldo;
         }
