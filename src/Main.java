@@ -39,7 +39,6 @@ public class Main {
                                 System.out.print("Digite o valor de depósito: \n");
                                 valorDeposito = scanner.nextDouble();
                                 entradaDeposito = true;
-                                minhaConta.depositar(valorDeposito);
                             } catch (InputMismatchException e) {
                                 System.out.println("Digite apenas números");
                                 scanner.nextLine();
@@ -47,6 +46,7 @@ public class Main {
                         }
                         minhaConta.depositar(valorDeposito);
                         break;
+
                     case 3:
                         System.out.println("O seu saldo atual é de R$" + minhaConta.getSaldo());
                         break;
