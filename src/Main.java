@@ -25,7 +25,7 @@ public class Main {
                     minhaConta.depositar(valorDeposito);
                     break;
                 case 3:
-                    System.out.println("Você escolheu opção 3");
+                    System.out.println("O seu saldo atual é de R$" + minhaConta.getSaldo());
                     break;
                 case 4:
                     System.out.println("Saindo...");
