@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,30 +13,35 @@ public class Main {
         while (continuar) {
             System.out.println("Escolha entre as opções: \n 1- Sacar \n 2- Depositar \n 3- Consultar Saldo \n 4- Sair");
             System.out.print("Digite o número da sua opção: \n");
-            int opcaoEscolhida = scanner.nextInt();
-            switch (opcaoEscolhida) {
-                case 1:
-                    System.out.print("Digite o valor do saque: \n");
-                    double valorSaque = scanner.nextDouble();
-                    minhaConta.sacar(valorSaque);
-                    break;
-                case 2:
-                    System.out.print("Digite o valor de depósito: \n");
-                    double valorDeposito = scanner.nextDouble();
-                    minhaConta.depositar(valorDeposito);
-                    break;
-                case 3:
-                    System.out.println("O seu saldo atual é de R$" + minhaConta.getSaldo());
-                    break;
-                case 4:
-                    System.out.println("Saindo...");
-                    continuar = false;
-                    break;
-                default:
-                    System.out.println("Escolha uma opção válida!");
+            try {
+                int opcaoEscolhida = scanner.nextInt();
+                switch (opcaoEscolhida) {
+                    case 1:
+                        System.out.print("Digite o valor do saque: \n");
+                        double valorSaque = scanner.nextDouble();
+                        minhaConta.sacar(valorSaque);
+                        break;
+                    case 2:
+                        System.out.print("Digite o valor de depósito: \n");
+                        double valorDeposito = scanner.nextDouble();
+                        minhaConta.depositar(valorDeposito);
+                        break;
+                    case 3:
+                        System.out.println("O seu saldo atual é de R$" + minhaConta.getSaldo());
+                        break;
+                    case 4:
+                        System.out.println("Saindo...");
+                        continuar = false;
+                        break;
+                    default:
+                        System.out.println("Escolha uma opção válida!");
+                }
+            } catch (InputMismatchException e){
+                System.out.println("Entrada inválida! Digite um número.");
+                scanner.nextLine();
             }
         }
 
 
+        }
     }
-}
