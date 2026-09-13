@@ -20,7 +20,8 @@ public class Main {
                     minhaConta.sacar(valorSaque);
                     break;
                 case 2:
-                    System.out.println("Você escolheu opção 2");
+                    System.out.print("Digite o valor de depósito: \n");
+
                     break;
                 case 3:
                     System.out.println("Você escolheu opção 3");
