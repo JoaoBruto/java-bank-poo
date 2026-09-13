@@ -7,9 +7,6 @@ public class Main {
         Conta minhaConta = new Conta(1, 500.00, meuCliente);
         System.out.println(minhaConta.getCliente().getNome());
         System.out.println(minhaConta.getCliente().getCpf());
-        System.out.print("Digite o valor do depósito: \n");
-        double valorDepositado = scanner.nextDouble();
-        System.out.print(valorDepositado);
         boolean continuar = true;
 
         while (continuar) {
@@ -19,6 +16,8 @@ public class Main {
             switch (opcaoEscolhida) {
                 case 1:
                     System.out.print("Digite o valor do saque: \n");
+                    double valorSaque = scanner.nextDouble();
+                    minhaConta.sacar(valorSaque);
                     break;
                 case 2:
                     System.out.println("Você escolheu opção 2");
