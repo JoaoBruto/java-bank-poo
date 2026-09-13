@@ -32,8 +32,19 @@ public class Main {
                         minhaConta.sacar(valorSaque);
                         break;
                     case 2:
-                        System.out.print("Digite o valor de depósito: \n");
-                        double valorDeposito = scanner.nextDouble();
+                        boolean entradaDeposito = false;
+                        double valorDeposito = 0;
+                        while (!entradaDeposito) {
+                            try {
+                                System.out.print("Digite o valor de depósito: \n");
+                                valorDeposito = scanner.nextDouble();
+                                entradaDeposito = true;
+                                minhaConta.depositar(valorDeposito);
+                            } catch (InputMismatchException e) {
+                                System.out.println("Digite apenas números");
+                                scanner.nextLine();
+                            }
+                        }
                         minhaConta.depositar(valorDeposito);
                         break;
                     case 3:
