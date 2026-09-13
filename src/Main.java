@@ -17,8 +17,18 @@ public class Main {
                 int opcaoEscolhida = scanner.nextInt();
                 switch (opcaoEscolhida) {
                     case 1:
-                        System.out.print("Digite o valor do saque: \n");
-                        double valorSaque = scanner.nextDouble();
+                        boolean entradaValida = false;
+                        double valorSaque = 0;
+                        while (!entradaValida) {
+                            try {
+                                System.out.print("Digite o valor do saque: \n");
+                                valorSaque = scanner.nextDouble();
+                                entradaValida = true; // Só chega aqui se a linha de cima não der erro
+                            } catch (InputMismatchException e) {
+                                System.out.println("Digite apenas números");
+                                scanner.nextLine();
+                            }
+                        }
                         minhaConta.sacar(valorSaque);
                         break;
                     case 2:

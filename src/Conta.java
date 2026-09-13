@@ -42,7 +42,7 @@ public class Conta {
         }
         else {
             this.saldo -= valorSaque;
-            System.out.println("Valor sacado com sucesso! " + valorSaque);
+            System.out.println("Valor sacado com sucesso! " + saldo);
             return saldo;
         }
     }
