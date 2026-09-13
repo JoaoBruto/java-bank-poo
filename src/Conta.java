@@ -30,7 +30,7 @@ public class Conta {
         }
         else {
             saldo += valorDeposito;
-            System.out.println("Valor depositado com sucesso. Seu valor atual é:");
+            System.out.println("Valor depositado com sucesso. \nSeu valor atual é:" + saldo);
             return saldo;
         }
     }

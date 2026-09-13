@@ -21,7 +21,8 @@ public class Main {
                     break;
                 case 2:
                     System.out.print("Digite o valor de depósito: \n");
-
+                    double valorDeposito = scanner.nextDouble();
+                    minhaConta.depositar(valorDeposito);
                     break;
                 case 3:
                     System.out.println("Você escolheu opção 3");
