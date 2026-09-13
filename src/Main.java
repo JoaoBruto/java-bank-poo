@@ -18,7 +18,7 @@ public class Main {
             int opcaoEscolhida = scanner.nextInt();
             switch (opcaoEscolhida) {
                 case 1:
-                    System.out.println("Você escolheu opção 1");
+                    System.out.print("Digite o valor do saque: \n");
                     break;
                 case 2:
                     System.out.println("Você escolheu opção 2");
