@@ -1,7 +1,7 @@
 
 public class Conta {
     private int id;
-    private double saldo;
+    protected double saldo;
     private Cliente cliente;
     private double valorDeposito;
 

@@ -5,4 +5,17 @@ public class ContaCorrente extends Conta {
         this.limiteChequeEspecial = limiteChequeEspecial;
     }
 
+    @Override
+    public double sacar(double valorSaque){
+        if(valorSaque > saldo + limiteChequeEspecial) {
+            System.out.println("Valor de saque excedido.");
+            return saldo;
+        }
+        else {
+            this.saldo -= valorSaque;
+            System.out.println("Valor sacado com sucesso! " + saldo);
+            return saldo;
+        }
+    }
+
 }
