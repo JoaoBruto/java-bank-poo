@@ -10,6 +10,7 @@ public class Main {
         System.out.println(minhaConta.getCliente().getCpf());
 
         Conta[] contas = new Conta[2];
+        ContaPoupanca minhaContaPoupanca = new ContaPoupanca()
 
         boolean continuar = true;
 
