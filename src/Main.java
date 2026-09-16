@@ -8,6 +8,9 @@ public class Main {
         Conta minhaConta = new Conta(1, 500.00, meuCliente);
         System.out.println(minhaConta.getCliente().getNome());
         System.out.println(minhaConta.getCliente().getCpf());
+
+        Conta[] contas = new Conta[2];
+
         boolean continuar = true;
 
         while (continuar) {
