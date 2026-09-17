@@ -13,8 +13,10 @@ public class Main {
         ContaCorrente minhaContaCorrente = new ContaCorrente(1, 500.00, meuCliente, 1000.00);
         ContaPoupanca minhaContaPoupanca = new ContaPoupanca(1, 600.00, meuCliente, 0.05);
 
-        contas[0] = minhaContaCorrente;
-        contas[1] = minhaContaPoupanca;
+        for (int i = 0; i < contas.length; i++) {
+            contas[0] = minhaContaCorrente;
+            contas[1] = minhaContaPoupanca;
+        }
 
         boolean continuar = true;
 
