@@ -14,9 +14,10 @@ public class Main {
         ContaPoupanca minhaContaPoupanca = new ContaPoupanca(1, 600.00, meuCliente, 0.05);
 
         for (int i = 0; i < contas.length; i++) {
-            contas[0] = minhaContaCorrente;
-            contas[1] = minhaContaPoupanca;
+            contas[i].sacar(100);
         }
+        contas[0] = minhaContaCorrente;
+        contas[1] = minhaContaPoupanca;
 
         boolean continuar = true;
 
