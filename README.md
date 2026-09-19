@@ -25,6 +25,7 @@ Este projeto foi construído para colocar em prática os seguintes conteúdos:
 ## 🏗️ Estrutura planejada
 
 - `Conta` — classe base representando uma conta bancária genérica
+- `Cliente` — classe base representando o cliente
 - `ContaCorrente` — subclasse de `Conta` com regras específicas
 - `ContaPoupanca` — subclasse de `Conta` com regras específicas
 - `Banco` (ou similar) — gerencia a coleção de contas
