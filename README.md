@@ -47,4 +47,4 @@ Este é o primeiro projeto prático após a conclusão de um curso introdutório
 
 ---
 
-Feito como parte de um processo contínuo de aprendizado em Java. 🚀
+Feito como parte de um processo contínuo de aprendizado em Java. 🚀☕
