@@ -20,7 +20,7 @@ public class Main {
         }
 
         boolean continuar = true;
-
+        Conta contaAtiva;
         while (continuar) {
             System.out.print("Escolha sua conta: \n 1- Conta Corrente \n 2- Conta Poupança \n");
             scanner.nextLine();
