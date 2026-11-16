@@ -22,7 +22,7 @@ public class Main {
         boolean continuar = true;
 
         while (continuar) {
-            System.out.print("Escolha sua conta: \n 1- Conta Corrente \n 2- Conta Poupança");
+            System.out.print("Escolha sua conta: \n 1- Conta Corrente \n 2- Conta Poupança \n");
             scanner.nextLine();
             System.out.println("Escolha entre as opções: \n 1- Sacar \n 2- Depositar \n 3- Consultar Saldo \n 4- Sair");
             System.out.print("Digite o número da sua opção: \n");
