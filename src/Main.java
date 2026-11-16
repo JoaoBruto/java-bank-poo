@@ -24,9 +24,12 @@ public class Main {
         System.out.println("1- Conta Poupança \n 2- Conta Corrente");
         int escolhaConta = scanner.nextInt();
         if (escolhaConta == 1) {
-            contaAtiva = ContaPoupanca;
-        } else {
-            contaAtiva = ContaCorrente;
+             contaAtiva = minhaContaCorrente;
+        } else if (escolhaConta == 2) {
+            contaAtiva = minhaContaPoupanca;
+        }
+        else {
+            System.out.println("Digite uma opção válida.");
         }
 
         while (continuar) {
