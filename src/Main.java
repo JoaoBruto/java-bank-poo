@@ -21,6 +21,9 @@ public class Main {
 
         boolean continuar = true;
         Conta contaAtiva;
+        System.out.println("1- Conta Poupança \n 2- Conta Corrente");
+        scanner.nextInt();
+        int escolhaConta = scanner.nextInt();
         while (continuar) {
             System.out.print("Escolha sua conta: \n 1- Conta Corrente \n 2- Conta Poupança \n");
             scanner.nextLine();
